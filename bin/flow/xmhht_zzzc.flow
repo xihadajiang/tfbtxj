@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="GB2312"?>
+<flow description="公共支付转账转出">
+   <node desc="流程开始" g="35,10,48,48" nodeid="null" identifier="start">
+      <return>
+         <next g="-11,-17" value="0" identifier="YLMsgUnPack"/>
+      </return>
+   </node>
+   <node desc="流程结束" g="35,386,48,48" nodeid="null" identifier="end">
+      <return/>
+   </node>
+   <node desc="银联解包" g="(340, 10, 92, 52)" nodeid="YLMsgUnPack" identifier="YLMsgUnPack">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="YLMsgUnPack" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="zzzc_jxbw"/>
+         <next g="6,-16" value="-1" identifier="YLMsgPack"/>
+      </return>
+   </node>
+   <node desc="组包返回银联" g="(340, 80, 92, 52)" nodeid="YLMsgPack" identifier="YLMsgPack">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="YLMsgPack" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="the_end"/>
+         <next g="6,-16" value="-1" identifier="the_end"/>
+      </return>
+   </node>
+   <node desc="通用节点结束" g="(340, 150, 92, 52)" nodeid="the_end" identifier="the_end">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="the_end" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="end"/>
+         <next g="6,-16" value="-1" identifier="end"/>
+      </return>
+   </node>
+   <node desc="通用异常处理" g="(340, 220, 92, 52)" nodeid="pub_error" identifier="pub_error">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="pub_error" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="YLMsgPack"/>
+         <next g="6,-16" value="1" identifier="YLMsgPack"/>
+      </return>
+   </node>
+   <node desc="2次解析银联报文域" g="(340, 290, 92, 52)" nodeid="zzzc_jxbw" identifier="zzzc_jxbw">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="zzzc_jxbw" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="pack_beai_zzzc"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+      </return>
+   </node>
+   <node desc="转账转出BEAI打包" g="(340, 360, 92, 52)" nodeid="pack_beai_zzzc" identifier="pack_beai_zzzc">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="pack_beai_zzzc" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="tongcomm"/>
+      </return>
+   </node>
+   <node desc="TONG通讯节点" g="(340, 430, 92, 52)" nodeid="tongcomm" identifier="tongcomm">
+      <function filename="libsyscomnode.so" functionname="DoTONGTran" type="so" >
+         <input>
+            <arg name="SYS_TONGTRANCODE" origin="literal" value="008901" />
+            <arg name="SYS_TONGDESTNAME" origin="literal" value="cpbeai" />
+            <arg name="SYS_YFSDBW" origin="variable" value="" />
+            <arg name="SYS_YFSDWJ" origin="variable" value="" />
+         </input>
+         <output>
+            <arg name="SYS_JSDDWJ" origin="variable" value="" />
+            <arg name="SYS_JSDDBW" origin="variable" value="" />
+            <arg name="SYS_JSDDBWDZD" origin="variable" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="unpack_beai_zzzc"/>
+         <next g="6,-16" value="-3" identifier="pub_error"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+         <next g="6,-16" value="-2" identifier="pub_error"/>
+         <next g="6,-16" value="999" identifier="pub_error"/>
+      </return>
+   </node>
+   <node desc="转账转出BEAI解包" g="(340, 500, 92, 52)" nodeid="unpack_beai_zzzc" identifier="unpack_beai_zzzc">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="unpack_beai_zzzc" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="zzzc_jgjy"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+      </return>
+   </node>
+   <node desc="转账转出结果校验" g="(340, 570, 92, 52)" nodeid="zzzc_jgjy" identifier="zzzc_jgjy">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="xmhht" />
+            <arg name="FUNCNAME" origin="literal" value="zzzc_jgjy" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="YLMsgPack"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+      </return>
+   </node>
+</flow>

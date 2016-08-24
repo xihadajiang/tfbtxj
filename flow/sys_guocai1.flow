@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="GB2312"?>
+<flow description="国采支付主控接入">
+   <node desc="流程开始" g="35,10,48,48" nodeid="null" identifier="start">
+      <return>
+         <next g="-11,-17" value="0" identifier="TRAC_Commbuf"/>
+      </return>
+   </node>
+   <node desc="流程结束" g="35,386,48,48" nodeid="null" identifier="end">
+      <return/>
+   </node>
+   <node desc="在TRACE日志文件中打印通讯缓冲区内容" g="(340, 10, 92, 52)" nodeid="TRAC_Commbuf" identifier="TRAC_Commbuf">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="TRAC_Commbuf" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="CNTR_CallSubFlow"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+      </return>
+   </node>
+   <node desc="执行指定的子流程" g="(340, 80, 92, 52)" nodeid="CNTR_CallSubFlow" identifier="CNTR_CallSubFlow">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_1" origin="literal" value="subflow_[/pub/subsysname]_unpack" />
+            <arg name="FUNCNAME" origin="literal" value="CNTR_CallSubFlow" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="the_end"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+      </return>
+   </node>
+   <node desc="通用节点结束" g="(340, 150, 92, 52)" nodeid="the_end" identifier="the_end">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="the_end" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="end"/>
+         <next g="6,-16" value="-1" identifier="end"/>
+      </return>
+   </node>
+   <node desc="通用异常处理" g="(340, 220, 92, 52)" nodeid="pub_error" identifier="pub_error">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="pub_error" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="the_end"/>
+         <next g="6,-16" value="1" identifier="the_end"/>
+      </return>
+   </node>
+</flow>

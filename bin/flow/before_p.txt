@@ -1,0 +1,11 @@
+{'py_default': {'input': {'MODNAME': 'guocai_txj'}}, 
+ 'desc': u'\u56fd\u91c7\u652f\u4ed8GAPS\u5230\u4e09\u65b9', 
+ 'nods': [
+  {'rets': {0: 'gc_sign', -1: 'GAPSMsgPack'}, 'type': 'py', 'id': 'GAPSMsgUnPack', 'rank': 0, 'desc': u'GAPS\u89e3\u5305'}, 
+  {'rets': {0: 'the_end', -1: 'the_end'}, 'type': 'py', 'id': 'GAPSMsgPack', 'rank': 999, 'desc': u'\u7ec4\u5305\u8fd4\u56deGAPS'}, 
+  {'rets': {0: 'end', -1: 'end'}, 'type': 'py', 'id': 'the_end', 'rank': 999, 'desc': u'\u901a\u7528\u8282\u70b9\u7ed3\u675f'}, 
+  {'rets': {0: 'GAPSMsgPack', 1: 'GAPSMsgPack'}, 'type': 'py', 'id': 'pub_error', 'rank': 800, 'desc': u'\u901a\u7528\u5f02\u5e38\u5904\u7406'}, 
+  {'rets': {0: 'pack_gc_dk', -1: 'pub_error'}, 'type': 'py', 'id': 'gc_sign', 'rank': 0, 'desc': u'\u56fd\u91c7\u52a0\u7b7e'}, 
+  {'rets': {0: 'the_end', -1: 'the_end'}, 'type': 'py', 'id': 'pack_gc_dk', 'rank': 3, 'desc': u'\u4ee3\u6263\u56fd\u91c7\u6253\u5305'}
+  ],
+ 'start': 'GAPSMsgUnPack'}

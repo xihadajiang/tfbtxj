@@ -1,0 +1,88 @@
+desc: 公共支付转账转出
+start: YLMsgUnPack
+py_default:
+    input:
+        MODNAME: xmhht
+nods: 
+    - type: py
+      rank: 0
+      desc: 银联解包
+      id: YLMsgUnPack
+      rets:
+        0: zzzc_jxbw
+        -1: YLMsgPack
+    
+    - type: py
+      rank: 999
+      desc: 组包返回银联
+      id: YLMsgPack
+      rets:
+        0: the_end
+        -1: the_end
+        
+    - type: py
+      rank: 999
+      desc: 通用节点结束
+      id: the_end
+      rets:
+        0: end
+        -1: end
+    
+    - type: py
+      rank: 800
+      desc: 通用异常处理
+      id: pub_error
+      rets:
+        0: YLMsgPack
+        1: YLMsgPack
+        
+    - type: py
+      rank: 0
+      desc: 2次解析银联报文域
+      id: zzzc_jxbw
+      rets:
+        0: pack_beai_zzzc
+        -1: pub_error
+        
+    - type: py
+      rank: 3
+      desc: 转账转出BEAI打包
+      id: pack_beai_zzzc
+      rets:
+        0: tongcomm
+                
+    - type: c
+      rank: 300
+      desc: TONG通讯节点
+      id: tongcomm
+      filen: libsyscomnode.so
+      funcn: DoTONGTran
+      input:
+        SYS_TONGDESTNAME: cpbeai
+        SYS_TONGTRANCODE: 008901
+        SYS_YFSDWJ: var
+        SYS_YFSDBW: var
+      output:
+        [SYS_JSDDWJ,SYS_JSDDBW,SYS_JSDDBWDZD]
+      rets:
+        0: unpack_beai_zzzc
+        -1: pub_error
+        -2: pub_error
+        -3: pub_error
+        999: pub_error
+        
+    - type: py
+      rank: 3
+      desc: 转账转出BEAI解包
+      id: unpack_beai_zzzc
+      rets:
+        0: zzzc_jgjy
+        -1: pub_error
+
+    - type: py
+      rank: 0
+      desc: 转账转出结果校验
+      id: zzzc_jgjy
+      rets:
+        0: YLMsgPack
+        -1: pub_error

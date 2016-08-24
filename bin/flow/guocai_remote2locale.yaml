@@ -1,0 +1,53 @@
+desc: 国采支付GAPS到三方
+start: GAPSMsgUnPack
+py_default:
+    input:
+        MODNAME: guocai_txj
+nods: 
+    - type: py
+      rank: 0
+      desc: GAPS解包
+      id: GAPSMsgUnPack
+      rets:
+        0: gc_sign
+        -1: GAPSMsgPack
+    
+    - type: py
+      rank: 999
+      desc: 组包返回GAPS
+      id: GAPSMsgPack
+      rets:
+        0: the_end
+        -1: the_end
+        
+    - type: py
+      rank: 999
+      desc: 通用节点结束
+      id: the_end
+      rets:
+        0: end
+        -1: end
+    
+    - type: py
+      rank: 800
+      desc: 通用异常处理
+      id: pub_error
+      rets:
+        0: GAPSMsgPack
+        1: GAPSMsgPack
+        
+    - type: py
+      rank: 0
+      desc: 国采加签
+      id: gc_sign
+      rets:
+        0: pack_gc_dk
+        -1: pub_error
+        
+    - type: py
+      rank: 3
+      desc: 代扣国采打包
+      id: pack_gc_dk
+      rets:
+        0: the_end
+        -1: the_end

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="GB2312"?>
+<flow description="国采接入主控流程">
+   <node desc="流程开始" g="35,10,48,48" nodeid="null" identifier="start">
+      <return>
+         <next g="-11,-17" value="0" identifier="-300"/>
+      </return>
+   </node>
+   <node desc="流程结束" g="35,386,48,48" nodeid="null" identifier="end">
+      <return/>
+   </node>
+   <node desc="BEGIN" g="(340, 10, 92, 52)" nodeid="-300" identifier="-300">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="BEGIN" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="3"/>
+         <next g="6,-16" value="-9999" identifier="-200"/>
+      </return>
+   </node>
+   <node desc="END" g="(340, 80, 92, 52)" nodeid="-200" identifier="-200">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="END" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="end"/>
+      </return>
+   </node>
+   <node desc="END" g="(340, 150, 92, 52)" nodeid="-100" identifier="-100">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="END" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="end"/>
+      </return>
+   </node>
+   <node desc="通用渠道接口解析子流程" g="(340, 220, 92, 52)" nodeid="0" identifier="0">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_3" origin="literal" value="None" />
+            <arg name="_2" origin="literal" value="0" />
+            <arg name="_1" origin="literal" value="subflow_[jyzd/subsysname]_local2remote" />
+            <arg name="FUNCNAME" origin="literal" value="SCNTR_CallSubFlow" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="-100"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+         <next g="6,-16" value="-1" identifier="-8888"/>
+         <next g="6,-16" value="1" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="在TRACE日志文件中记录当前的XML结构树的内容。" g="(340, 290, 92, 52)" nodeid="1" identifier="1">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="STRAC_XMLTree" />
+            <arg name="_1" origin="literal" value="80" />
+            <arg name="_0" origin="literal" value="None" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="2"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="系统参数环境初始化" g="(340, 360, 92, 52)" nodeid="2" identifier="2">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_4" origin="literal" value="[/pub/yhdm]" />
+            <arg name="_3" origin="literal" value="[/pub/yybs]" />
+            <arg name="_2" origin="literal" value="[/pub/qdlx]" />
+            <arg name="_1" origin="literal" value="0[/pub/sysint]" />
+            <arg name="FUNCNAME" origin="literal" value="Agentx_SysInit" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="6"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="在TRACE日志文件中打印通讯缓冲区内容。" g="(340, 430, 92, 52)" nodeid="3" identifier="3">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_3" origin="literal" value="1" />
+            <arg name="_2" origin="literal" value="/commbuf" />
+            <arg name="_1" origin="literal" value="低柜请求报文:" />
+            <arg name="FUNCNAME" origin="literal" value="STRAC_Commbuf" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="1"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="是否是从本地发起" g="(340, 500, 92, 52)" nodeid="4" identifier="4">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_3" origin="literal" value="local2remote" />
+            <arg name="_2" origin="literal" value="==" />
+            <arg name="_1" origin="literal" value="[jyzd/name]" />
+            <arg name="FUNCNAME" origin="literal" value="SDATA_MStrCompare" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="5"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+         <next g="6,-16" value="1" identifier="0"/>
+      </return>
+   </node>
+   <node desc="通用渠道接口解析子流程" g="(340, 570, 92, 52)" nodeid="5" identifier="5">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_3" origin="literal" value="None" />
+            <arg name="_2" origin="literal" value="0" />
+            <arg name="_1" origin="literal" value="subflow_[jyzd/subsysname]_remote2local" />
+            <arg name="FUNCNAME" origin="literal" value="SCNTR_CallSubFlow" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="-100"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+         <next g="6,-16" value="-1" identifier="-8888"/>
+         <next g="6,-16" value="1" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="获取指定的INI文件中指定的配置参数的内容，存放到XML节点中" g="(340, 640, 92, 52)" nodeid="6" identifier="6">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_4" origin="literal" value="jyzd/KEY" />
+            <arg name="_3" origin="literal" value="KEY" />
+            <arg name="_2" origin="literal" value="COMM" />
+            <arg name="_1" origin="literal" value="[jyzd/subsysname].ini" />
+            <arg name="FUNCNAME" origin="literal" value="SSYS_GetIniCfg" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="7"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+         <next g="6,-16" value="-1" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="获取指定的INI文件中指定的配置参数的内容，存放到XML节点中" g="(340, 710, 92, 52)" nodeid="7" identifier="7">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="_4" origin="literal" value="jyzd/shh" />
+            <arg name="_3" origin="literal" value="shh" />
+            <arg name="_2" origin="literal" value="COMM" />
+            <arg name="_1" origin="literal" value="[jyzd/subsysname].ini" />
+            <arg name="FUNCNAME" origin="literal" value="SSYS_GetIniCfg" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="4"/>
+         <next g="6,-16" value="-9999" identifier="-8888"/>
+         <next g="6,-16" value="-1" identifier="-8888"/>
+      </return>
+   </node>
+   <node desc="异常处理流程" g="(340, 780, 92, 52)" nodeid="-8888" identifier="-8888">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="pub_error" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="end"/>
+         <next g="6,-16" value="1" identifier="end"/>
+      </return>
+   </node>
+</flow>

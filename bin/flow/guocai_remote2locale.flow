@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="GB2312"?>
+<flow description="国采支付GAPS到三方">
+   <node desc="流程开始" g="35,10,48,48" nodeid="null" identifier="start">
+      <return>
+         <next g="-11,-17" value="0" identifier="GAPSMsgUnPack"/>
+      </return>
+   </node>
+   <node desc="流程结束" g="35,386,48,48" nodeid="null" identifier="end">
+      <return/>
+   </node>
+   <node desc="GAPS解包" g="(340, 10, 92, 52)" nodeid="GAPSMsgUnPack" identifier="GAPSMsgUnPack">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="GAPSMsgUnPack" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="gc_sign"/>
+         <next g="6,-16" value="-1" identifier="GAPSMsgPack"/>
+      </return>
+   </node>
+   <node desc="组包返回GAPS" g="(340, 80, 92, 52)" nodeid="GAPSMsgPack" identifier="GAPSMsgPack">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="GAPSMsgPack" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="the_end"/>
+         <next g="6,-16" value="-1" identifier="the_end"/>
+      </return>
+   </node>
+   <node desc="通用节点结束" g="(340, 150, 92, 52)" nodeid="the_end" identifier="the_end">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="the_end" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="end"/>
+         <next g="6,-16" value="-1" identifier="end"/>
+      </return>
+   </node>
+   <node desc="通用异常处理" g="(340, 220, 92, 52)" nodeid="pub_error" identifier="pub_error">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="pub_error" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="GAPSMsgPack"/>
+         <next g="6,-16" value="1" identifier="GAPSMsgPack"/>
+      </return>
+   </node>
+   <node desc="国采加签" g="(340, 290, 92, 52)" nodeid="gc_sign" identifier="gc_sign">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="gc_sign" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="pack_gc_dk"/>
+         <next g="6,-16" value="-1" identifier="pub_error"/>
+      </return>
+   </node>
+   <node desc="代扣国采打包" g="(340, 360, 92, 52)" nodeid="pack_gc_dk" identifier="pack_gc_dk">
+      <function filename="libpynode.so" functionname="CallPython" type="so" >
+         <input>
+            <arg name="" origin="allparam" value="" />
+            <arg name="MODNAME" origin="literal" value="guocai_txj" />
+            <arg name="FUNCNAME" origin="literal" value="pack_gc_dk" />
+         </input>
+         <output>
+            <arg name="" origin="allparam" value="" />
+         </output>
+      </function>
+      <return>
+         <next g="6,-16" value="0" identifier="the_end"/>
+         <next g="6,-16" value="-1" identifier="the_end"/>
+      </return>
+   </node>
+</flow>

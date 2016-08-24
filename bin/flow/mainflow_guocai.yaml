@@ -1,0 +1,42 @@
+desc: 国采支付主控接入
+start: TRAC_Commbuf
+py_default:
+    input:
+        MODNAME: guocai_txj
+nods: 
+    - type: py
+      rank: 0
+      desc: 在TRACE日志文件中打印通讯缓冲区内容
+      id: TRAC_Commbuf
+      rets:
+        0: CNTR_CallSubFlow
+        -1: pub_error
+    
+    - type: py
+      rank: 999
+      desc: 执行指定的子流程
+      id: CNTR_CallSubFlow
+      input:
+        _1: subflow_[/pub/subsysname]_unpack
+      output:
+        [SYS_JSDDWJ,SYS_JSDDBW,SYS_JSDDBWDZD]
+      rets:
+        0: the_end
+        -1: pub_error
+        
+    - type: py
+      rank: 999
+      desc: 通用节点结束
+      id: the_end
+      rets:
+        0: end
+        -1: end
+    
+    - type: py
+      rank: 800
+      desc: 通用异常处理
+      id: pub_error
+      rets:
+        0: the_end
+        1: the_end
+        

@@ -1,0 +1,2798 @@
+2016-08-24 09:58:35,000 T10832 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:35,171 T10832 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:35,513 T10832 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 215, in SPKG_IXMLtoOXML
+    jyzd["resp"] = dicttoxml.dicttoxml(d,root=False,attr_type=False)
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'business_type': u'14900', u'bank_name':
+                       u'\u5174\u4e1a\u94f6\u884c', u'cre_id': u'371324198806065718',
+                       ...
+                   s = {u'root': {...}}
+                   f = <open file '../flow/gp_sys_guocai_fail_resp.json', mode 'r' at 0x033E2DE0>
+                json = <module 'json' from 'C:\Python26\lib\json\__init__.pyc'>
+           dicttoxml = <module 'dicttoxml' from 'C:\Python26\lib\site-packages\dicttoxml.pyc'>
+NameError: global name 'd' is not defined
+
+2016-08-24 09:58:35,546 T10832 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'business_type': u'14900', u'bank_name':
+u'\u5174\u4e1a\u94f6\u884c', u'cre_id': u'371324198806065718',
+u'cre_type': u'1', u'tran_amt': u'10000', u'card_prov':
+u'\u4e0a\u6d77', u'mobile': u'13800000000', u'md5_sign': '',
+u'true_name': u'11111', u'card_id': u'622908115000352211',
+u'spbillno': u'222223', u'card_type': u'0', u'postscript': '',
+u'TransCode': u'api_acp_single.cgi', u'purpose':
+u'\u901a\u8baf\u8d39', u'spid': u'1800631877', u'business_no':
+u'444444', u'bank_ins_code': u'03090000', u'ver': u'1.0', u'cur_type':
+u'1'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 215, in SPKG_IXMLtoOXML\n    jyzd["resp"]
+= dicttoxml.dicttoxml(d,root=False,attr_type=False)\n
+jyzd = AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'business_type\': u\'14900\', u\'bank_name\':\n
+u\'\\u5174\\u4e1a\\u94f6\\u884c\', u\'cre_id\':
+u\'371324198806065718\',\n                       ...\n
+s = {u\'root\': {...}}\n                   f = <open file
+\'../flow/gp_sys_guocai_fail_resp.json\', mode \'r\' at 0x033E2DE0>\n
+json = <module \'json\' from
+\'C:\\Python26\\lib\\json\\__init__.pyc\'>\n           dicttoxml =
+<module \'dicttoxml\' from \'C:\\Python26\\lib\\site-
+packages\\dicttoxml.pyc\'>\nNameError: global name \'d\' is not
+defined\n'
+cipher_data:'cipher_data=XOdFYXylV63Oo4iHqdY4ymIRq0lP5f2BTTtzzoqrWRJ2SY0ufgjTYaITt
+Bw9M4Ek2dtX9NkuxnsfKRJ9ujqKiy1fNWQVJmuaO5vWy8fvvjs8K8Dh4hKs7bjpsInVgl4
+lXPvQQXqGjHztsypesPjHeFFbjhHr7S8XHX959FbmvZI%3Dc%2BGsLa38%2F02QUXDtjuI
+JbVzvgXazaZ0FlbRLYDeB9d89RVXkEm6Y7V3UrFyS6WXvsmsxOiy%2BDQKhE70yHJ36u5r
+SH8Pvu1DinyFpHRubohgwPfOK57CMCp7c5Dxi96rFpatmZYACyN5072MjJ6daWnXedbc8m
+%2B%2FZuzQwPkNwUUk%3DREi9s9t%2FLJuSQ7YF9ubOuNfpmBAupRJexTOvT7shhXFRp1Y
+li86e4aLuDSvjanw%2BDVDv4kzMdBkdR7Vb8YC4C9n2OKeOlEu52yyKfsEVKiAqg6Nu7ab
+u%2FNh289H69Km3Zt6%2BpOi0qV4XuEOAo5p2RbLrJetxBA1SdDNaGPh8vFs%3DnzK2%2F
+4lan1z%2BKlseLcVq2iBQUL3i0yqQWj9HpaqZKC4zuVeIJyvTIg3iFjsVlqpO%2B2QZ%2F
+bbuJLzBWldWnu3vNN81Ccpg3xLD85SARtdyEhhqmsXgiBZrIjF42paiDut0IcA2C3BJyXS
+fUurxZpaYjeUYUpTtpv5hkAKlo1A%2FO2c%3D'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+resp:u'POST /cgi-bin/v2.0/api_acp_single.cgi HTTP/1.1\r\nContent-Length:
+736\r\nHost: apitest.tfb8.com\r\nReferer: http://apitest.tfb8.com/cgi-
+bin/v2.0/api_acp_single.cgi\r\nAccept-Encoding: UTF-8, deflate\r
+\nCache-Control: no-cache\r\nAccept-Language: zh-cn\r\nContent-Type:
+application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\nAccept:
+image/gif, */*\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0;
+Windows NT 5.1; SV1; .NET CLR 2.0.50727)\r\n\r\ncipher_data=XOdFYXylV6
+3Oo4iHqdY4ymIRq0lP5f2BTTtzzoqrWRJ2SY0ufgjTYaITtBw9M4Ek2dtX9NkuxnsfKRJ9
+ujqKiy1fNWQVJmuaO5vWy8fvvjs8K8Dh4hKs7bjpsInVgl4lXPvQQXqGjHztsypesPjHeF
+FbjhHr7S8XHX959FbmvZI%3Dc%2BGsLa38%2F02QUXDtjuIJbVzvgXazaZ0FlbRLYDeB9d
+89RVXkEm6Y7V3UrFyS6WXvsmsxOiy%2BDQKhE70yHJ36u5rSH8Pvu1DinyFpHRubohgwPf
+OK57CMCp7c5Dxi96rFpatmZYACyN5072MjJ6daWnXedbc8m%2B%2FZuzQwPkNwUUk%3DRE
+i9s9t%2FLJuSQ7YF9ubOuNfpmBAupRJexTOvT7shhXFRp1Yli86e4aLuDSvjanw%2BDVDv
+4kzMdBkdR7Vb8YC4C9n2OKeOlEu52yyKfsEVKiAqg6Nu7abu%2FNh289H69Km3Zt6%2BpO
+i0qV4XuEOAo5p2RbLrJetxBA1SdDNaGPh8vFs%3DnzK2%2F4lan1z%2BKlseLcVq2iBQUL
+3i0yqQWj9HpaqZKC4zuVeIJyvTIg3iFjsVlqpO%2B2QZ%2FbbuJLzBWldWnu3vNN81Ccpg
+3xLD85SARtdyEhhqmsXgiBZrIjF42paiDut0IcA2C3BJyXSfUurxZpaYjeUYUpTtpv5hkA
+Klo1A%2FO2c%3D'
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:35,734 T10832 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 315, in SCNTR_CallSubFlow
+    ret = flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 115, in goflow
+    curr = curr.go_next( ret )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 66, in go_next
+    return self.next[ret][1]
+                self = <flow.flow_utils.FlowNode instance at 0x033D6080>
+                 ret = -1
+KeyError: -1
+
+2016-08-24 09:58:35,762 T10832 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'business_type': u'14900', u'bank_name':
+u'\u5174\u4e1a\u94f6\u884c', u'cre_id': u'371324198806065718',
+u'cre_type': u'1', u'tran_amt': u'10000', u'card_prov':
+u'\u4e0a\u6d77', u'mobile': u'13800000000', u'md5_sign': '',
+u'true_name': u'11111', u'card_id': u'622908115000352211',
+u'spbillno': u'222223', u'card_type': u'0', u'postscript': '',
+u'TransCode': u'api_acp_single.cgi', u'purpose':
+u'\u901a\u8baf\u8d39', u'spid': u'1800631877', u'business_no':
+u'444444', u'bank_ins_code': u'03090000', u'ver': u'1.0', u'cur_type':
+u'1'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 315, in SCNTR_CallSubFlow\n    ret =
+flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)\n  File "H:\\sh
+are\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\
+xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py",
+line 115, in goflow\n    curr = curr.go_next( ret )\n  File "H:\\share
+\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1
+\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py", line
+66, in go_next\n    return self.next[ret][1]\n                self =
+<flow.flow_utils.FlowNode instance at 0x033D6080>\n
+ret = -1\nKeyError: -1\n'
+cipher_data:'cipher_data=XOdFYXylV63Oo4iHqdY4ymIRq0lP5f2BTTtzzoqrWRJ2SY0ufgjTYaITt
+Bw9M4Ek2dtX9NkuxnsfKRJ9ujqKiy1fNWQVJmuaO5vWy8fvvjs8K8Dh4hKs7bjpsInVgl4
+lXPvQQXqGjHztsypesPjHeFFbjhHr7S8XHX959FbmvZI%3Dc%2BGsLa38%2F02QUXDtjuI
+JbVzvgXazaZ0FlbRLYDeB9d89RVXkEm6Y7V3UrFyS6WXvsmsxOiy%2BDQKhE70yHJ36u5r
+SH8Pvu1DinyFpHRubohgwPfOK57CMCp7c5Dxi96rFpatmZYACyN5072MjJ6daWnXedbc8m
+%2B%2FZuzQwPkNwUUk%3DREi9s9t%2FLJuSQ7YF9ubOuNfpmBAupRJexTOvT7shhXFRp1Y
+li86e4aLuDSvjanw%2BDVDv4kzMdBkdR7Vb8YC4C9n2OKeOlEu52yyKfsEVKiAqg6Nu7ab
+u%2FNh289H69Km3Zt6%2BpOi0qV4XuEOAo5p2RbLrJetxBA1SdDNaGPh8vFs%3DnzK2%2F
+4lan1z%2BKlseLcVq2iBQUL3i0yqQWj9HpaqZKC4zuVeIJyvTIg3iFjsVlqpO%2B2QZ%2F
+bbuJLzBWldWnu3vNN81Ccpg3xLD85SARtdyEhhqmsXgiBZrIjF42paiDut0IcA2C3BJyXS
+fUurxZpaYjeUYUpTtpv5hkAKlo1A%2FO2c%3D'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+resp:u'POST /cgi-bin/v2.0/api_acp_single.cgi HTTP/1.1\r\nContent-Length:
+736\r\nHost: apitest.tfb8.com\r\nReferer: http://apitest.tfb8.com/cgi-
+bin/v2.0/api_acp_single.cgi\r\nAccept-Encoding: UTF-8, deflate\r
+\nCache-Control: no-cache\r\nAccept-Language: zh-cn\r\nContent-Type:
+application/x-www-form-urlencoded\r\nConnection: Keep-Alive\r\nAccept:
+image/gif, */*\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0;
+Windows NT 5.1; SV1; .NET CLR 2.0.50727)\r\n\r\ncipher_data=XOdFYXylV6
+3Oo4iHqdY4ymIRq0lP5f2BTTtzzoqrWRJ2SY0ufgjTYaITtBw9M4Ek2dtX9NkuxnsfKRJ9
+ujqKiy1fNWQVJmuaO5vWy8fvvjs8K8Dh4hKs7bjpsInVgl4lXPvQQXqGjHztsypesPjHeF
+FbjhHr7S8XHX959FbmvZI%3Dc%2BGsLa38%2F02QUXDtjuIJbVzvgXazaZ0FlbRLYDeB9d
+89RVXkEm6Y7V3UrFyS6WXvsmsxOiy%2BDQKhE70yHJ36u5rSH8Pvu1DinyFpHRubohgwPf
+OK57CMCp7c5Dxi96rFpatmZYACyN5072MjJ6daWnXedbc8m%2B%2FZuzQwPkNwUUk%3DRE
+i9s9t%2FLJuSQ7YF9ubOuNfpmBAupRJexTOvT7shhXFRp1Yli86e4aLuDSvjanw%2BDVDv
+4kzMdBkdR7Vb8YC4C9n2OKeOlEu52yyKfsEVKiAqg6Nu7abu%2FNh289H69Km3Zt6%2BpO
+i0qV4XuEOAo5p2RbLrJetxBA1SdDNaGPh8vFs%3DnzK2%2F4lan1z%2BKlseLcVq2iBQUL
+3i0yqQWj9HpaqZKC4zuVeIJyvTIg3iFjsVlqpO%2B2QZ%2FbbuJLzBWldWnu3vNN81Ccpg
+3xLD85SARtdyEhhqmsXgiBZrIjF42paiDut0IcA2C3BJyXSfUurxZpaYjeUYUpTtpv5hkA
+Klo1A%2FO2c%3D'
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:36,381 T5420 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:06:16 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:36,561 T5420 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:06:16 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:36,661 T5420 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 215, in SPKG_IXMLtoOXML
+    jyzd["resp"] = dicttoxml.dicttoxml(d,root=False,attr_type=False)
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+                       u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+                       ...
+                   s = {u'root': {...}}
+                   f = <open file '../flow/gp_sys_guocai_fail_resp.json', mode 'r' at 0x033E2DE0>
+                json = <module 'json' from 'C:\Python26\lib\json\__init__.pyc'>
+           dicttoxml = <module 'dicttoxml' from 'C:\Python26\lib\site-packages\dicttoxml.pyc'>
+NameError: global name 'd' is not defined
+
+2016-08-24 09:58:36,686 T5420 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 215, in SPKG_IXMLtoOXML\n    jyzd["resp"]
+= dicttoxml.dicttoxml(d,root=False,attr_type=False)\n
+jyzd = AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'tid\': u\'api_acp_single\', u\'retcode\':
+u\'207531\',\n                       u\'retmsg\': u\'\\u91cd\\u590d\\u
+7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7\'}}\n
+...\n                   s = {u\'root\': {...}}\n                   f =
+<open file \'../flow/gp_sys_guocai_fail_resp.json\', mode \'r\' at
+0x033E2DE0>\n                json = <module \'json\' from
+\'C:\\Python26\\lib\\json\\__init__.pyc\'>\n           dicttoxml =
+<module \'dicttoxml\' from \'C:\\Python26\\lib\\site-
+packages\\dicttoxml.pyc\'>\nNameError: global name \'d\' is not
+defined\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:06:16 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 09:58:36,776 T5420 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 315, in SCNTR_CallSubFlow
+    ret = flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 115, in goflow
+    curr = curr.go_next( ret )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 66, in go_next
+    return self.next[ret][1]
+                self = <flow.flow_utils.FlowNode instance at 0x033D6030>
+                 ret = -1
+KeyError: -1
+
+2016-08-24 09:58:36,792 T5420 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 315, in SCNTR_CallSubFlow\n    ret =
+flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)\n  File "H:\\sh
+are\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\
+xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py",
+line 115, in goflow\n    curr = curr.go_next( ret )\n  File "H:\\share
+\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1
+\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py", line
+66, in go_next\n    return self.next[ret][1]\n                self =
+<flow.flow_utils.FlowNode instance at 0x033D6030>\n
+ret = -1\nKeyError: -1\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:06:16 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:00:18,917 T6908 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:00:19,068 T6908 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:04:45,244 T6988 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:04:45,380 T6988 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:07:14,276 T10696 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:07:14,413 T10696 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:07:14,943 T10640 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:14:55 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:07:15,125 T10640 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:14:55 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:07:15,186 T10640 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 315, in SCNTR_CallSubFlow
+    ret = flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 93, in goflow
+    curr = build_flow( flowfile )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 90, in build_flow
+    raise RuntimeError( '流程产生了多个入口：%s' % ( ','.join( roots.keys() ) ) )
+                   k = 0
+               cache = {'-100': <flow.flow_utils.FlowNode instance at 0x03248120>,
+                        '-200': <flow.flow_utils.FlowNode instance at 0x032480D0>,
+                        '-300': <flow.flow_utils.FlowNode instance at 0x032481C0>,
+                        '-8888': <flow.flow_utils.FlowNode instance at 0x03248B98>,
+                       ...
+                   n = ['end', <flow.flow_utils.FlowNode instance at 0x032480F8>]
+                fobj = <flow.flow_utils.FlowNode instance at 0x03248B98>
+                  fn = '../flow/subflow_sys_guocai_remote2local.flow'
+                   x = <flow.flow_utils.FlowNode instance at 0x032480D0>
+                root = <Element flow at 3234fa8>
+               roots = {'6': <flow.flow_utils.FlowNode instance at 0x03248DA0>, 'start': <flow.flow_utils.FlowNode instance at 0x03230210>}
+RuntimeError: 流程产生了多个入口：start,6
+
+2016-08-24 10:07:15,211 T10640 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 315, in SCNTR_CallSubFlow\n    ret =
+flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)\n  File "H:\\sh
+are\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\
+xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py",
+line 93, in goflow\n    curr = build_flow( flowfile )\n  File "H:\\sha
+re\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\x
+b1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py",
+line 90, in build_flow\n    raise RuntimeError( \'\xc1\xf7\xb3\xcc\xb2
+\xfa\xc9\xfa\xc1\xcb\xb6\xe0\xb8\xf6\xc8\xeb\xbf\xda\xa3\xba%s\' % (
+\',\'.join( roots.keys() ) ) )\n                   k = 0\n
+cache = {\'-100\': <flow.flow_utils.FlowNode instance at
+0x03248120>,\n                        \'-200\':
+<flow.flow_utils.FlowNode instance at 0x032480D0>,\n
+\'-300\': <flow.flow_utils.FlowNode instance at 0x032481C0>,\n
+\'-8888\': <flow.flow_utils.FlowNode instance at 0x03248B98>,\n
+...\n                   n = [\'end\', <flow.flow_utils.FlowNode
+instance at 0x032480F8>]\n                fobj =
+<flow.flow_utils.FlowNode instance at 0x03248B98>\n
+fn = \'../flow/subflow_sys_guocai_remote2local.flow\'\n
+x = <flow.flow_utils.FlowNode instance at 0x032480D0>\n
+root = <Element flow at 3234fa8>\n               roots = {\'6\':
+<flow.flow_utils.FlowNode instance at 0x03248DA0>, \'start\':
+<flow.flow_utils.FlowNode instance at 0x03230210>}\nRuntimeError: \xc1
+\xf7\xb3\xcc\xb2\xfa\xc9\xfa\xc1\xcb\xb6\xe0\xb8\xf6\xc8\xeb\xbf\xda\x
+a3\xbastart,6\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:14:55 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:14:20,848 T10804 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:14:20,984 T10804 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:14:21,470 T10608 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:22:01 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:14:21,631 T10608 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:22:01 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:18:20,082 T11072 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:18:20,224 T11072 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:18:20,667 T10728 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:26:00 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:18:20,818 T10728 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:26:00 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:18:20,976 T10728 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 214, in SPKG_IXMLtoOXML
+    s = ass( gp , jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 71, in ass
+    ress = ress.get(i,"")
+                name = <_sre.SRE_Pattern object at 0x030DDAA0>
+                   g = ['jyzd/REQ/root/retmsg', '/pub/zhqzlsh', 'jyzd/REQ/root/retcode', '/pub/zwrq', '/ybt/dzjgwjm']
+                   i = 'dzjgwjm'
+                ress = ''
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+                       u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+                       ...
+                 blm = '/ybt/dzjgwjm'
+                 arg = u'{"root": {"respmsg": "\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7", "zhqzlsh": "", "respcode": "207531", "zwrq": "", "wjm": "[/ybt/dzjgwjm]"}}'
+AttributeError: 'str' object has no attribute 'get'
+
+2016-08-24 10:18:20,997 T10728 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 214, in SPKG_IXMLtoOXML\n    s = ass( gp
+, jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb
+5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\
+\utils\\utils.py", line 71, in ass\n    ress = ress.get(i,"")\n
+name = <_sre.SRE_Pattern object at 0x030DDAA0>\n                   g =
+[\'jyzd/REQ/root/retmsg\', \'/pub/zhqzlsh\',
+\'jyzd/REQ/root/retcode\', \'/pub/zwrq\', \'/ybt/dzjgwjm\']\n
+i = \'dzjgwjm\'\n                ress = \'\'\n                jyzd =
+AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'tid\': u\'api_acp_single\', u\'retcode\':
+u\'207531\',\n                       u\'retmsg\': u\'\\u91cd\\u590d\\u
+7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7\'}}\n
+...\n                 blm = \'/ybt/dzjgwjm\'\n                 arg =
+u\'{"root": {"respmsg":
+"\\u91cd\\u590d\\u7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7",
+"zhqzlsh": "", "respcode": "207531", "zwrq": "", "wjm":
+"[/ybt/dzjgwjm]"}}\'\nAttributeError: \'str\' object has no attribute
+\'get\'\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:26:00 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:18:21,069 T10728 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 318, in SCNTR_CallSubFlow
+    ret = flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 115, in goflow
+    curr = curr.go_next( ret )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 66, in go_next
+    return self.next[ret][1]
+                self = <flow.flow_utils.FlowNode instance at 0x0312B2B0>
+                 ret = -1
+KeyError: -1
+
+2016-08-24 10:18:21,091 T10728 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 318, in SCNTR_CallSubFlow\n    ret =
+flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)\n  File "H:\\sh
+are\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\
+xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py",
+line 115, in goflow\n    curr = curr.go_next( ret )\n  File "H:\\share
+\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1
+\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py", line
+66, in go_next\n    return self.next[ret][1]\n                self =
+<flow.flow_utils.FlowNode instance at 0x0312B2B0>\n
+ret = -1\nKeyError: -1\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:26:00 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:22:50,132 T6492 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:22:50,240 T6492 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:22:50,711 T10340 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:30:30 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:22:50,828 T10340 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:30:30 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:22:50,970 T10340 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 214, in SPKG_IXMLtoOXML
+    s = ass( gp , jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 73, in ass
+    ress = ress.get(i,"")
+                name = <_sre.SRE_Pattern object at 0x0318DBC0>
+                   g = ['jyzd/REQ/root/retmsg', '/pub/zhqzlsh', 'jyzd/REQ/root/retcode', '/pub/zwrq', '/ybt/dzjgwjm']
+                   i = 'dzjgwjm'
+                ress = ''
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+                       u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+                       ...
+                 blm = '/ybt/dzjgwjm'
+                 arg = u'{"root": {"respmsg": "\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7", "zhqzlsh": "", "respcode": "207531", "zwrq": "", "wjm": "[/ybt/dzjgwjm]"}}'
+AttributeError: 'str' object has no attribute 'get'
+
+2016-08-24 10:22:50,992 T10340 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 214, in SPKG_IXMLtoOXML\n    s = ass( gp
+, jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb
+5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\
+\utils\\utils.py", line 73, in ass\n    ress = ress.get(i,"")\n
+name = <_sre.SRE_Pattern object at 0x0318DBC0>\n                   g =
+[\'jyzd/REQ/root/retmsg\', \'/pub/zhqzlsh\',
+\'jyzd/REQ/root/retcode\', \'/pub/zwrq\', \'/ybt/dzjgwjm\']\n
+i = \'dzjgwjm\'\n                ress = \'\'\n                jyzd =
+AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'tid\': u\'api_acp_single\', u\'retcode\':
+u\'207531\',\n                       u\'retmsg\': u\'\\u91cd\\u590d\\u
+7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7\'}}\n
+...\n                 blm = \'/ybt/dzjgwjm\'\n                 arg =
+u\'{"root": {"respmsg":
+"\\u91cd\\u590d\\u7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7",
+"zhqzlsh": "", "respcode": "207531", "zwrq": "", "wjm":
+"[/ybt/dzjgwjm]"}}\'\nAttributeError: \'str\' object has no attribute
+\'get\'\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:30:30 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:22:51,081 T10340 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 318, in SCNTR_CallSubFlow
+    ret = flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 115, in goflow
+    curr = curr.go_next( ret )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\flow\flow_utils.py", line 66, in go_next
+    return self.next[ret][1]
+                self = <flow.flow_utils.FlowNode instance at 0x031DD8F0>
+                 ret = -1
+KeyError: -1
+
+2016-08-24 10:22:51,101 T10340 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 318, in SCNTR_CallSubFlow\n    ret =
+flow.flow_utils.goflow("../flow/%s.flow"%subflow,jyzd)\n  File "H:\\sh
+are\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\
+xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py",
+line 115, in goflow\n    curr = curr.go_next( ret )\n  File "H:\\share
+\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1
+\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_txj\\bin\\flow\\flow_utils.py", line
+66, in go_next\n    return self.next[ret][1]\n                self =
+<flow.flow_utils.FlowNode instance at 0x031DD8F0>\n
+ret = -1\nKeyError: -1\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:30:30 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_2': '/commbuf', '_1': 'pkg_gbism_[/pub/qdjydm]_resp'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:24:37,869 T10764 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:24:37,954 T10764 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:24:38,434 T2332 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:32:18 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:24:38,542 T2332 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:32:18 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:37:11,223 T7248 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:37:11,306 T7248 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:37:11,812 T10560 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:44:51 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:37:11,934 T10560 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:44:51 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:37:12,082 T10560 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 263, in SAPEX_CONVERT
+    exec(""" jyzd['%s'] = "%s".decode(%s).encode(%s)"""%(tar_data,sou_data,sou_coding,tar_coding))
+            tar_data = 'resp'
+          sou_coding = 'UTF-8'
+                sjgs = '1'
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+                       u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+                       ...
+          tar_coding = 'GB18030'
+            sou_data = '<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root>'
+  File "<string>", line 1
+    jyzd['resp'] = "<root><respmsg>閲嶅鐨勫晢鎴蜂唬鎵ｅ崟鍙�</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root>".decode(UTF-8).encode(GB18030)
+   ^
+IndentationError: unexpected indent
+
+2016-08-24 10:37:12,117 T10560 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 263, in SAPEX_CONVERT\n    exec("""
+jyzd[\'%s\'] = "%s".decode(%s).encode(%s)"""%(tar_data,sou_data,sou_co
+ding,tar_coding))\n            tar_data = \'resp\'\n
+sou_coding = \'UTF-8\'\n                sjgs = \'1\'\n
+jyzd = AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'tid\': u\'api_acp_single\', u\'retcode\':
+u\'207531\',\n                       u\'retmsg\': u\'\\u91cd\\u590d\\u
+7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7\'}}\n
+...\n          tar_coding = \'GB18030\'\n            sou_data = \'<roo
+t><respmsg>\\xe9\\x87\\x8d\\xe5\\xa4\\x8d\\xe7\\x9a\\x84\\xe5\\x95\\x8
+6\\xe6\\x88\\xb7\\xe4\\xbb\\xa3\\xe6\\x89\\xa3\\xe5\\x8d\\x95\\xe5\\x8
+f\\xb7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></
+zwrq><wjm></wjm></root>\'\n  File "<string>", line 1\n
+jyzd[\'resp\'] = "<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\
+xe5\x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb
+7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq>
+<wjm></wjm></root>".decode(UTF-8).encode(GB18030)\n
+^\nIndentationError: unexpected indent\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:44:51 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_5': 'jyzd/resp', '_4': 'jyzd/resp', '_3': 'GB18030', '_2': 'UTF-8',
+'_1': '1'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+resp:'<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\x95\x86\xe6\x
+88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</respmsg><zhqzl
+sh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root
+>'
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:38:30,460 T10160 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:38:30,579 T10160 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:38:31,105 T5952 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:46:11 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:38:31,221 T5952 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:46:11 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:38:31,371 T5952 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 263, in SAPEX_CONVERT
+    exec(""" jyzd['%s'] = "%s".decode('%s').encode('%s')"""%(tar_data,sou_data,sou_coding,tar_coding))
+            tar_data = 'resp'
+          sou_coding = 'UTF-8'
+                sjgs = '1'
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+                       u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+                       ...
+          tar_coding = 'GB18030'
+            sou_data = '<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root>'
+  File "<string>", line 1
+    jyzd['resp'] = "<root><respmsg>閲嶅鐨勫晢鎴蜂唬鎵ｅ崟鍙�</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root>".decode('UTF-8').encode('GB18030')
+   ^
+IndentationError: unexpected indent
+
+2016-08-24 10:38:31,395 T5952 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 263, in SAPEX_CONVERT\n    exec("""
+jyzd[\'%s\'] = "%s".decode(\'%s\').encode(\'%s\')"""%(tar_data,sou_dat
+a,sou_coding,tar_coding))\n            tar_data = \'resp\'\n
+sou_coding = \'UTF-8\'\n                sjgs = \'1\'\n
+jyzd = AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'tid\': u\'api_acp_single\', u\'retcode\':
+u\'207531\',\n                       u\'retmsg\': u\'\\u91cd\\u590d\\u
+7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7\'}}\n
+...\n          tar_coding = \'GB18030\'\n            sou_data = \'<roo
+t><respmsg>\\xe9\\x87\\x8d\\xe5\\xa4\\x8d\\xe7\\x9a\\x84\\xe5\\x95\\x8
+6\\xe6\\x88\\xb7\\xe4\\xbb\\xa3\\xe6\\x89\\xa3\\xe5\\x8d\\x95\\xe5\\x8
+f\\xb7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></
+zwrq><wjm></wjm></root>\'\n  File "<string>", line 1\n
+jyzd[\'resp\'] = "<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\
+xe5\x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb
+7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq>
+<wjm></wjm></root>".decode(\'UTF-8\').encode(\'GB18030\')\n
+^\nIndentationError: unexpected indent\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:46:11 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_5': 'jyzd/resp', '_4': 'jyzd/resp', '_3': 'GB18030', '_2': 'UTF-8',
+'_1': '1'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+resp:'<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\x95\x86\xe6\x
+88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</respmsg><zhqzl
+sh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root
+>'
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:40:10,947 T9372 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:40:11,019 T9372 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:40:11,463 T8176 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:47:51 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:40:11,561 T8176 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:47:51 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:40:11,701 T8176 ERROR Traceback (most recent call last):
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\utils\utils.py", line 20, in _call
+    r = func( _jyzd )
+  File "H:\share\work\银联全渠道\天付宝通讯机\tfb_txj\bin\guocai_txj.py", line 263, in SAPEX_CONVERT
+    exec(""" jyzd['%s'] = sou_data.decode('%s').encode('%s')"""%(tar_data,sou_coding,tar_coding))
+            tar_data = 'resp'
+          sou_coding = 'UTF-8'
+                sjgs = '1'
+                jyzd = AttrDict{
+                       KEY:'2d3c22048b300db8b347b7024b378053'
+                       REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+                       u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+                       ...
+          tar_coding = 'GB18030'
+            sou_data = '<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root>'
+  File "<string>", line 1
+    jyzd['resp'] = sou_data.decode('UTF-8').encode('GB18030')
+   ^
+IndentationError: unexpected indent
+
+2016-08-24 10:40:11,721 T8176 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+REQ:{u'root': {u'tid': u'api_acp_single', u'retcode': u'207531',
+u'retmsg': u'\u91cd\u590d\u7684\u5546\u6237\u4ee3\u6263\u5355\u53f7'}}
+SYS_RspCode:'TS0004'
+SYS_RspInfo:'Traceback (most recent call last):\n  File "H:\\share\\work\\\xd2\xf8
+\xc1\xaa\xc8\xab\xc7\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1
+\xb6\xbb\xfa\\tfb_txj\\bin\\utils\\utils.py", line 20, in _call\n    r
+= func( _jyzd )\n  File "H:\\share\\work\\\xd2\xf8\xc1\xaa\xc8\xab\xc7
+\xfe\xb5\xc0\\\xcc\xec\xb8\xb6\xb1\xa6\xcd\xa8\xd1\xb6\xbb\xfa\\tfb_tx
+j\\bin\\guocai_txj.py", line 263, in SAPEX_CONVERT\n    exec("""
+jyzd[\'%s\'] = sou_data.decode(\'%s\').encode(\'%s\')"""%(tar_data,sou
+_coding,tar_coding))\n            tar_data = \'resp\'\n
+sou_coding = \'UTF-8\'\n                sjgs = \'1\'\n
+jyzd = AttrDict{\n
+KEY:\'2d3c22048b300db8b347b7024b378053\'\n
+REQ:{u\'root\': {u\'tid\': u\'api_acp_single\', u\'retcode\':
+u\'207531\',\n                       u\'retmsg\': u\'\\u91cd\\u590d\\u
+7684\\u5546\\u6237\\u4ee3\\u6263\\u5355\\u53f7\'}}\n
+...\n          tar_coding = \'GB18030\'\n            sou_data = \'<roo
+t><respmsg>\\xe9\\x87\\x8d\\xe5\\xa4\\x8d\\xe7\\x9a\\x84\\xe5\\x95\\x8
+6\\xe6\\x88\\xb7\\xe4\\xbb\\xa3\\xe6\\x89\\xa3\\xe5\\x8d\\x95\\xe5\\x8
+f\\xb7</respmsg><zhqzlsh></zhqzlsh><respcode>207531</respcode><zwrq></
+zwrq><wjm></wjm></root>\'\n  File "<string>", line 1\n
+jyzd[\'resp\'] = sou_data.decode(\'UTF-8\').encode(\'GB18030\')\n
+^\nIndentationError: unexpected indent\n'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:47:51 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_5': 'jyzd/resp', '_4': 'jyzd/resp', '_3': 'GB18030', '_2': 'UTF-8',
+'_1': '1'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+resp:'<root><respmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\x95\x86\xe6\x
+88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</respmsg><zhqzl
+sh></zhqzlsh><respcode>207531</respcode><zwrq></zwrq><wjm></wjm></root
+>'
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:17,793 T10984 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:17,897 T10984 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:18,345 T10784 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:48:58 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:18,440 T10784 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:48:58 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:28,354 T9320 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:28,454 T9320 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:28,951 T8332 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:49:09 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:29,046 T8332 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:49:09 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:37,855 T9372 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:37,954 T9372 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:38,380 T10160 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:49:18 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:38,473 T10160 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:49:18 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:41,885 T11132 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:41,982 T11132 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:42,453 T6644 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:49:22 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 10:41:42,549 T6644 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 02:49:22 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:01:42,362 T11224 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:01:42,467 T11224 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:01:42,960 T5980 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:09:23 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:01:43,063 T5980 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:09:23 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:25,112 T5732 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:25,183 T5732 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:25,631 T10692 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:05 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:25,723 T10692 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:05 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:34,690 T9184 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:34,796 T9184 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:35,246 T10604 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:15 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:35,348 T10604 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:15 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:37,358 T8332 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:37,460 T8332 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:37,907 T10672 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:18 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:37,996 T10672 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:18 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:39,306 T10244 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:39,411 T10244 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:39,845 T11016 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:19 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:39,948 T11016 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:19 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:42,075 T7132 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:42,190 T7132 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:42,634 T6740 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:22 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:42,730 T6740 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:22 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:43,946 T10572 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:44,049 T10572 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:44,551 T6932 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:24 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:44,684 T6932 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:24 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:45,979 T9384 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:46,075 T9384 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:46,515 T10388 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:26 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:46,615 T10388 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:26 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:47,877 T10324 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:47,976 T10324 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:48,438 T10576 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:28 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:48,536 T10576 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:28 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:49,845 T8648 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:49,943 T8648 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:50,382 T10660 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:30 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:50,486 T10660 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:30 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:51,832 T9224 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:51,944 T9224 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:52,391 T8740 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:32 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:52,487 T8740 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:32 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n0\r\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:53,987 T6644 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:54,084 T6644 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:54,555 T9452 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:34 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:54,657 T9452 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:34 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:56,157 T8468 ERROR 交易字典内容输出：AttrDict{
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_0': 'None', '_1': '80'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:56,257 T8468 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'00000617<?xml version=\'1.0\' encoding="GB2312" ?><root><ver>1.0</ver
+><spid>1800631877</spid><spbillno>222223</spbillno><business_type>1490
+0</business_type><business_no>444444</business_no><tran_amt>10000</tra
+n_amt><cur_type>1</cur_type><true_name>11111</true_name><mobile>138000
+00000</mobile><cre_id>371324198806065718</cre_id><cre_type>1</cre_type
+><card_id>622908115000352211</card_id><card_type>0</card_type><bank_na
+me>\xd0\xcb\xd2\xb5\xd2\xf8\xd0\xd0</bank_name><bank_ins_code>03090000
+</bank_ins_code><card_prov>\xc9\xcf\xba\xa3</card_prov><purpose>\xcd\x
+a8\xd1\xb6\xb7\xd1</purpose><postscript></postscript><md5_sign></md5_s
+ign><TransCode>api_acp_single.cgi</TransCode></root>'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_local2remote'}
+name:'local2remote'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:56,723 T10692 ERROR 交易字典内容输出：AttrDict{
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:36 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_0': 'None', '_1': '80'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
+2016-08-24 11:03:56,818 T10692 ERROR 交易字典内容输出：AttrDict{
+KEY:'2d3c22048b300db8b347b7024b378053'
+commbuf:'HTTP/1.1 200 OK\r\nDate: Wed, 24 Aug 2016 03:11:36 GMT\r\nServer:
+Apache/2.2.29 (Unix) DAV/2\r\nVary: Accept-Encoding\r\nContent-Type:
+application/xml;charset=UTF-8\r\nKeep-Alive: timeout=5,
+max=100\r\nConnection: Keep-Alive\r\nTransfer-Encoding:
+chunked\r\n\r\n93\r\n<?xml version="1.0" encoding="UTF-8" ?><root><ret
+code>207531</retcode><retmsg>\xe9\x87\x8d\xe5\xa4\x8d\xe7\x9a\x84\xe5\
+x95\x86\xe6\x88\xb7\xe4\xbb\xa3\xe6\x89\xa3\xe5\x8d\x95\xe5\x8f\xb7</r
+etmsg><tid>api_acp_single</tid></root>\n\r\n'
+input:{'_3': 'None', '_2': '0', '_1':
+'subflow_[jyzd/subsysname]_remote2local'}
+name:'remote2local'
+pub:{'subsysname': 'sys_guocai'}
+shh:'1800631877'
+subsysname:'sys_guocai'
+systemsign:'sys_guocai'
+}
+
